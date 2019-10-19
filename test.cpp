@@ -16,7 +16,7 @@ int main()
     */
     for(i=0;i<n;i++)
     {
-        for(j=0;j<i;j++)
+        for(j=0;j<(n-1-i);j++)
         {
             if(a[j]>a[j+1])
             {
