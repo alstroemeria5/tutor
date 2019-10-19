@@ -1,16 +1,16 @@
 #include <iostream>
-
+void printArray(int a[],int n);
 using namespace std;
 
 int main()
 {
-    int n=0,x=0,y=0;
+    int n=10,x=0,y=0;
     /*int a[n];*/
     int i,j,temp;
     /*cin>>n;*/
     int a[10]={0,11,22,33,55,66,77,99,88,44};
     /*for(i=0;i<=n-1;i++)
-    {
+    
         cin>>a[i];
     }
     */
@@ -26,10 +26,7 @@ int main()
             }
         }
     }
-    for(i=0;i<n;i++)
-    {
-        cout<<a[i];
-    }
+    printArray(a,10);
     /*
     for(i=0;i<n;i++)
     {
@@ -66,4 +63,8 @@ int main()
     }
     else cout<<"worth case";
     */
+}
+void printArray(int a[],int n){
+    for(int i=0;i<n;i++)
+        std::cout<<a[i]<<",";
 }
